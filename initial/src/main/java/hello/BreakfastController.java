@@ -44,7 +44,13 @@ public class BreakfastController {
 		br1.setPrice(15000);
 		br1.setNumsOfCalories(16);
 		
-		lsBreakfasts.add(br1);
+		Breakfast br2 = new Breakfast();
+		br1.setId(2);
+		br1.setName("my tom");
+		br1.setPrice(20000);
+		br1.setNumsOfCalories(15);
+		
+		lsBreakfasts.add(br2);
 		
 		
 	}
