@@ -19,6 +19,12 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
+
+war {
+    baseName = 'breakfast'
+    version = '0.1'
+}
 
 bootJar {
     baseName = 'gs-spring-boot'
@@ -34,6 +40,7 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("spring-boot-starter-mail")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testCompile("junit:junit")
 }

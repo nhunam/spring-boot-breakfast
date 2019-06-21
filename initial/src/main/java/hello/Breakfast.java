@@ -39,12 +39,20 @@ public class Breakfast {
 		this.numsOfCalories = numsOfCalories;
 	}
 	
-//	public Breakfast(long id, String name, float price, long numsOfCalories) {
-//		super();
-//		this.id = id;
-//		this.name = name;
-//		this.price = price;
-//		this.numsOfCalories = numsOfCalories;
-//	}
+	Breakfast(long id, String name, float price, long numsOfCalories) {
+		//super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.numsOfCalories = numsOfCalories;
+	}
+	
+	Breakfast(){
+		this.id = 0;
+		this.name = "xoi";
+		this.price = 10000;
+		this.numsOfCalories = 1500;
+		
+	}
 	
 }
